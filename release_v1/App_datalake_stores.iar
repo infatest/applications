@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imx:IMX xmlns:imx="http://com.informatica.imx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" serializationSpecVersion="11.0" crcEnabled="1" xmlns:common1="http://com.informatica.ds.ms.feature.metadata.common/0" versioncommon1="0.2.1" xmlns:common2="http://com.informatica.ds.app.feature.metadata.common/0" versioncommon2="0.0.1" xmlns:asoextension="http://com.informatica.adapter.sdkadapter.asoextension/2" versionasoextension="2.4.0" xmlns:catalog="http://com.informatica.adapter.sdkadapter.patternblocks.catalog/2" versioncatalog="2.2.0" xmlns:flatrecord="http://com.informatica.adapter.sdkadapter.patternblocks.flatrecord/2" versionflatrecord="2.2.0" xmlns:project="http://com.informatica.metadata.common.project/2" versionproject="2.2.0" xmlns:source1="http://com.informatica.metadata.common.txhandlerconfig.source/2" versionsource1="2.1.0" xmlns:source="http://com.informatica.metadata.common.transformation.source/2" versionsource="2.1.0" xmlns:common3="http://com.informatica.ds.app.metadata.common/0" versioncommon3="0.0.1" xmlns:target1="http://com.informatica.metadata.common.txhandlerconfig.target/2" versiontarget1="2.4.0" xmlns:resourceaccess1="http://com.informatica.metadata.common.txhandlerconfig.resourceaccess/2" versionresourceaccess1="2.1.0" xmlns:datasourceoperation="http://com.informatica.metadata.flatbyte.parse.datasourceoperation/2" versiondatasourceoperation="2.0.0" xmlns:sourceoperation="http://com.informatica.adapter.sdkadapter.projection.sourceoperation/2" versionsourceoperation="2.3.0" xmlns:sdkadapter="http://com.informatica.metadata.infasdk.connectinfo.sdkadapter/2" versionsdkadapter="2.1.0" xmlns:optimizerconfig="http://com.informatica.metadata.common.optimizerconfig/1" versionoptimizerconfig="1.0.0" xmlns:connection="http://com.informatica.adapter.hdfs.models.connection/1" versionconnection="1.2.0" xmlns:mapping="http://com.informatica.metadata.common.mapping/2" versionmapping="2.10.1" xmlns:adapter="http://com.informatica.metadata.common.adapter/2" versionadapter="2.2.0" xmlns:sdkmodelextension="http://com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension/1" versionsdkmodelextension="1.1.0" xmlns:datahandler="http://com.informatica.metadata.common.datahandler/2" versiondatahandler="2.2.0" xmlns:runtime="http://com.informatica.metadata.common.runtime/2" versionruntime="2.12.1" xmlns:codepage="http://com.informatica.metadata.common.codepage/2" versioncodepage="2.1.0" xmlns:dsoconfig1="http://com.informatica.metadata.common.dsoconfig/2" versiondsoconfig1="2.1.0" xmlns:conversionoperation="http://com.informatica.adapter.sdkadapter.projection.conversionoperation/2" versionconversionoperation="2.2.0" xmlns:core="http://com.informatica.metadata.common.core/2" versioncore="2.1.1" xmlns:dsoconfig2="http://com.informatica.metadata.flatbyte.parse.dsoconfig/2" versiondsoconfig2="2.10.0" xmlns:folder="http://com.informatica.metadata.common.folder/2" versionfolder="2.1.1" xmlns:field="http://com.informatica.adapter.sdkadapter.patternblocks.field/2" versionfield="2.2.0" xmlns:datasource="http://com.informatica.metadata.flatbyte.datasource/2" versiondatasource="2.2.0" xmlns:extension="http://com.informatica.metadata.flatbyte.hdfs.extension/2" versionextension="2.2.0" xmlns:genericextension="http://com.informatica.basemodel.utils.metadata.genericextension/1" versiongenericextension="1.1.0" xmlns:typelibrary="http://com.informatica.metadata.common.typesystem.typelibrary/2" versiontypelibrary="2.4.0" xmlns:description="http://com.informatica.metadata.common.description/2" versiondescription="2.1.0" xmlns:datarecord="http://com.informatica.metadata.flatbyte.datarecord/2" versiondatarecord="2.3.0" xmlns:connectinfo="http://com.informatica.metadata.common.connectinfo/2" versionconnectinfo="2.4.0" xmlns:dataformatconfig="http://com.informatica.adapter.sdkadapter.patternblocks.dataformatconfig/2" versiondataformatconfig="2.2.0" xmlns:optimizer="http://com.informatica.metadata.common.optimizer/1" versionoptimizer="1.0.1" xmlns:common="http://com.informatica.ds.app.spec.metadata.common/0" versioncommon="0.6.1" xmlns:txhandlerconfig="http://com.informatica.metadata.common.txhandlerconfig/2" versiontxhandlerconfig="2.1.1" xmlns:parameter="http://com.informatica.metadata.common.parameter/9" versionparameter="9.8.1" xmlns:asoconfig="http://com.informatica.adapter.sdkadapter.asoconfig/2" versionasoconfig="2.3.0" xmlns:projection="http://com.informatica.adapter.sdkadapter.projection/2" versionprojection="2.4.0" xmlns:hadoop="http://com.informatica.metadata.common.runtime.hadoop/1" versionhadoop="1.9.0" xmlns:modelextension="http://com.informatica.metadata.common.modelextension/2" versionmodelextension="2.1.0" xmlns:types="http://com.informatica.metadata.common.types/2" versiontypes="2.4.0" xmlns:datasourceoperation1="http://com.informatica.metadata.common.datasourceoperation/2" versiondatasourceoperation1="2.6.1" xmlns:genericannotation="http://com.informatica.metadata.common.genericannotation/2" versiongenericannotation="2.1.0" xmlns:transformation="http://com.informatica.metadata.common.transformation/3" versiontransformation="3.3.0" xmlns:logical="http://com.informatica.adapter.sdkadapter.logical/2" versionlogical="2.6.4" xmlns:target="http://com.informatica.metadata.common.transformation.target/2" versiontarget="2.4.0" xmlns:extension1="http://com.informatica.metadata.flatbyte.common.extension/2" versionextension1="2.1.0" xmlns:resourceaccess="http://com.informatica.metadata.common.transformation.resourceaccess/2" versionresourceaccess="2.3.0" xmlns:datasource1="http://com.informatica.metadata.common.datasource/2" versiondatasource1="2.2.0" xmlns:dsoconfig="http://com.informatica.metadata.flatbyte.generate.dsoconfig/2" versiondsoconfig="2.6.0" xmlns:datasourceoperation3="http://com.informatica.metadata.flatbyte.generate.datasourceoperation/2" versiondatasourceoperation3="2.1.0" xmlns:pdo="http://com.informatica.metadata.common.optimizerconfig.pdo/1" versionpdo="1.0.0" xmlns:datasourceoperation2="http://com.informatica.metadata.flatbyte.datasourceoperation/2" versiondatasourceoperation2="2.0.0" xmlns:mergeoperation="http://com.informatica.adapter.sdkadapter.projection.mergeoperation/2" versionmergeoperation="2.4.0" xmlns:typesystem="http://com.informatica.metadata.common.typesystem/2" versiontypesystem="2.2.0" xmlns:aso="http://com.informatica.adapter.sdkadapter.aso/2" versionaso="2.10.1" xmlns:capabilityattribute="http://com.informatica.adapter.sdkadapter.capabilityattribute/2" versioncapabilityattribute="2.3.0" xmlns:sinkoperation="http://com.informatica.adapter.sdkadapter.projection.sinkoperation/2" versionsinkoperation="2.4.0" xsi:schemaLocation="http://com.informatica.imx IMX.xsd http://com.informatica.ds.ms.feature.metadata.common/0 com.informatica.ds.ms.feature.metadata.common.xsd http://com.informatica.ds.app.feature.metadata.common/0 com.informatica.ds.app.feature.metadata.common.xsd http://com.informatica.adapter.sdkadapter.asoextension/2 com.informatica.adapter.sdkadapter.asoextension.xsd http://com.informatica.adapter.sdkadapter.patternblocks.catalog/2 com.informatica.adapter.sdkadapter.patternblocks.catalog.xsd http://com.informatica.adapter.sdkadapter.patternblocks.flatrecord/2 com.informatica.adapter.sdkadapter.patternblocks.flatrecord.xsd http://com.informatica.metadata.common.project/2 com.informatica.metadata.common.project.xsd http://com.informatica.metadata.common.txhandlerconfig.source/2 com.informatica.metadata.common.txhandlerconfig.source.xsd http://com.informatica.metadata.common.transformation.source/2 com.informatica.metadata.common.transformation.source.xsd http://com.informatica.ds.app.metadata.common/0 com.informatica.ds.app.metadata.common.xsd http://com.informatica.metadata.common.txhandlerconfig.target/2 com.informatica.metadata.common.txhandlerconfig.target.xsd http://com.informatica.metadata.common.txhandlerconfig.resourceaccess/2 com.informatica.metadata.common.txhandlerconfig.resourceaccess.xsd http://com.informatica.metadata.flatbyte.parse.datasourceoperation/2 com.informatica.metadata.flatbyte.parse.datasourceoperation.xsd http://com.informatica.adapter.sdkadapter.projection.sourceoperation/2 com.informatica.adapter.sdkadapter.projection.sourceoperation.xsd http://com.informatica.metadata.infasdk.connectinfo.sdkadapter/2 com.informatica.metadata.infasdk.connectinfo.sdkadapter.xsd http://com.informatica.metadata.common.optimizerconfig/1 com.informatica.metadata.common.optimizerconfig.xsd http://com.informatica.adapter.hdfs.models.connection/1 com.informatica.adapter.hdfs.models.connection.xsd http://com.informatica.metadata.common.mapping/2 com.informatica.metadata.common.mapping.xsd http://com.informatica.metadata.common.adapter/2 com.informatica.metadata.common.adapter.xsd http://com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension/1 com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension.xsd http://com.informatica.metadata.common.datahandler/2 com.informatica.metadata.common.datahandler.xsd http://com.informatica.metadata.common.runtime/2 com.informatica.metadata.common.runtime.xsd http://com.informatica.metadata.common.codepage/2 com.informatica.metadata.common.codepage.xsd http://com.informatica.metadata.common.dsoconfig/2 com.informatica.metadata.common.dsoconfig.xsd http://com.informatica.adapter.sdkadapter.projection.conversionoperation/2 com.informatica.adapter.sdkadapter.projection.conversionoperation.xsd http://com.informatica.metadata.common.core/2 com.informatica.metadata.common.core.xsd http://com.informatica.metadata.flatbyte.parse.dsoconfig/2 com.informatica.metadata.flatbyte.parse.dsoconfig.xsd http://com.informatica.metadata.common.folder/2 com.informatica.metadata.common.folder.xsd http://com.informatica.adapter.sdkadapter.patternblocks.field/2 com.informatica.adapter.sdkadapter.patternblocks.field.xsd http://com.informatica.metadata.flatbyte.datasource/2 com.informatica.metadata.flatbyte.datasource.xsd http://com.informatica.metadata.flatbyte.hdfs.extension/2 com.informatica.metadata.flatbyte.hdfs.extension.xsd http://com.informatica.basemodel.utils.metadata.genericextension/1 com.informatica.basemodel.utils.metadata.genericextension.xsd http://com.informatica.metadata.common.typesystem.typelibrary/2 com.informatica.metadata.common.typesystem.typelibrary.xsd http://com.informatica.metadata.common.description/2 com.informatica.metadata.common.description.xsd http://com.informatica.metadata.flatbyte.datarecord/2 com.informatica.metadata.flatbyte.datarecord.xsd http://com.informatica.metadata.common.connectinfo/2 com.informatica.metadata.common.connectinfo.xsd http://com.informatica.adapter.sdkadapter.patternblocks.dataformatconfig/2 com.informatica.adapter.sdkadapter.patternblocks.dataformatconfig.xsd http://com.informatica.metadata.common.optimizer/1 com.informatica.metadata.common.optimizer.xsd http://com.informatica.ds.app.spec.metadata.common/0 com.informatica.ds.app.spec.metadata.common.xsd http://com.informatica.metadata.common.txhandlerconfig/2 com.informatica.metadata.common.txhandlerconfig.xsd http://com.informatica.metadata.common.parameter/9 com.informatica.metadata.common.parameter.xsd http://com.informatica.adapter.sdkadapter.asoconfig/2 com.informatica.adapter.sdkadapter.asoconfig.xsd http://com.informatica.adapter.sdkadapter.projection/2 com.informatica.adapter.sdkadapter.projection.xsd http://com.informatica.metadata.common.runtime.hadoop/1 com.informatica.metadata.common.runtime.hadoop.xsd http://com.informatica.metadata.common.modelextension/2 com.informatica.metadata.common.modelextension.xsd http://com.informatica.metadata.common.types/2 com.informatica.metadata.common.types.xsd http://com.informatica.metadata.common.datasourceoperation/2 com.informatica.metadata.common.datasourceoperation.xsd http://com.informatica.metadata.common.genericannotation/2 com.informatica.metadata.common.genericannotation.xsd http://com.informatica.metadata.common.transformation/3 com.informatica.metadata.common.transformation.xsd http://com.informatica.adapter.sdkadapter.logical/2 com.informatica.adapter.sdkadapter.logical.xsd http://com.informatica.metadata.common.transformation.target/2 com.informatica.metadata.common.transformation.target.xsd http://com.informatica.metadata.flatbyte.common.extension/2 com.informatica.metadata.flatbyte.common.extension.xsd http://com.informatica.metadata.common.transformation.resourceaccess/2 com.informatica.metadata.common.transformation.resourceaccess.xsd http://com.informatica.metadata.common.datasource/2 com.informatica.metadata.common.datasource.xsd http://com.informatica.metadata.flatbyte.generate.dsoconfig/2 com.informatica.metadata.flatbyte.generate.dsoconfig.xsd http://com.informatica.metadata.flatbyte.generate.datasourceoperation/2 com.informatica.metadata.flatbyte.generate.datasourceoperation.xsd http://com.informatica.metadata.common.optimizerconfig.pdo/1 com.informatica.metadata.common.optimizerconfig.pdo.xsd http://com.informatica.metadata.flatbyte.datasourceoperation/2 com.informatica.metadata.flatbyte.datasourceoperation.xsd http://com.informatica.adapter.sdkadapter.projection.mergeoperation/2 com.informatica.adapter.sdkadapter.projection.mergeoperation.xsd http://com.informatica.metadata.common.typesystem/2 com.informatica.metadata.common.typesystem.xsd http://com.informatica.adapter.sdkadapter.aso/2 com.informatica.adapter.sdkadapter.aso.xsd http://com.informatica.adapter.sdkadapter.capabilityattribute/2 com.informatica.adapter.sdkadapter.capabilityattribute.xsd http://com.informatica.adapter.sdkadapter.projection.sinkoperation/2 com.informatica.adapter.sdkadapter.projection.sinkoperation.xsd">
+<project:Project imx:id="U:S5HtZdqfEeij4oSzFjLh7g" name="easyjet">
+<annotations>
+<Annotation imx:id="ID_1" xsi:type="description:Description"/>
+</annotations>
+<contents>
+<IObject imx:id="U:6EdRpuICEeiaxVrGc5cIWA" xsi:type="folder:Folder" name="Scenario_3">
+<contents>
+<IObject imx:id="U:NabrU-aUEeiVaeMu-h7pTQ" xsi:type="common:ApplicationSpec" name="App_datalake_stores">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="Release_Tag_v1"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<annotations>
+<Annotation imx:id="ID_2" xsi:type="description:Description" body="Release_Tag_v1"/>
+</annotations>
+<features>
+<Feature imx:id="U:NabrVOaUEeiVaeMu-h7pTQ" xsi:type="common1:MappingFeature" mappings="U:3cjDW-aJEeiVaeMu-h7pTQ" name="m_load_Datalake_StoreInStore_Orders">
+<mappingFeatureconfig imx:id="ID_3" xsi:type="common1:MappingFeatureConfig" dateFormat="MM%2FDD%2FYYYY+HH24:MI:SS"/>
+</Feature>
+</features>
+</IObject>
+<IObject imx:id="U:3cjDW-aJEeiVaeMu-h7pTQ" xsi:type="mapping:Mapping" name="m_load_Datalake_StoreInStore_Orders">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<characteristics>
+<Characteristic imx:id="ID_4" xsi:type="runtime:RuntimeCharacteristic" maximumRuntimeIntervalPerSource="PT0S" selectedExecutionEnvironmentName="hadoop" stateStore.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.StateStore">
+<environments>
+<ExecutionEnvironment imx:id="ID_5" xsi:type="hadoop:CADIYarnExecutionEngine">
+<executionConfig imx:id="ID_6" xsi:type="hadoop:HadoopExecutionConfig" connectInfo="stringIdentity:HADOOP_CDH_513" connectionName="HADOOP_CDH_513"/>
+</ExecutionEnvironment>
+</environments>
+<handlers>
+<TxHandlerConfig imx:id="ID_7" xsi:type="source1:SourceTxHandlerConfig" txInstance="U:3cjDXeaJEeiVaeMu-h7pTQ" selectedAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileParsingDataAdapter"/>
+<TxHandlerConfig imx:id="ID_8" xsi:type="target1:TargetTxHandlerConfig" txInstance="U:3cjDX-aJEeiVaeMu-h7pTQ" selectedAdapter="smd:com.informatica.adapter.seed.sdkadapter.CanonicalSDKAdapter.sdkDataAdapter" rejectDirectory.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.RejectDir" rejectFile="StoreInStore_Orders_S3_Write.bad"/>
+</handlers>
+<streamingConfig imx:id="ID_9" xsi:type="runtime:StreamingConfig" batchInterval="PT20S" cacheRefreshInterval="PT1H"/>
+</Characteristic>
+<Characteristic imx:id="ID_10" xsi:type="optimizer:OptimizerCharacteristic">
+<configs>
+<OptimizerConfig imx:id="ID_11" xsi:type="pdo:PushdownConfig"/>
+</configs>
+</Characteristic>
+</characteristics>
+<definedLibraries imx:id="U:3cjDXOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:TypeLibrary" name="Type_Definition_Library" typeSystem="smd:com.informatica.metadata.seed.platform.Platform.typesystem"/>
+<instances>
+<Instance imx:id="U:3cjDXeaJEeiVaeMu-h7pTQ" xsi:type="mapping:Instance" name="Read_RAW_StoreInStore_Orders" transformation="U:3cjDYOaJEeiVaeMu-h7pTQ">
+<fromOutlineLinks>
+<OutlineLink imx:id="ID_12" xsi:type="mapping:OutlineLink" fromInstance="U:3cjDXeaJEeiVaeMu-h7pTQ" toInstance="U:3cjDX-aJEeiVaeMu-h7pTQ"/>
+</fromOutlineLinks>
+<ports>
+<TransformationFieldPort imx:id="ID_13" xsi:type="mapping:TransformationFieldPort" instance="U:3cjDXeaJEeiVaeMu-h7pTQ" transformationField="U:3cjDd-aJEeiVaeMu-h7pTQ">
+<children>
+<NestedPort imx:id="ID_14" xsi:type="mapping:NestedPort" toPorts="ID_15" parent="ID_13" structuralFeature="U:3cjrL-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_16" xsi:type="mapping:NestedPort" toPorts="ID_17" parent="ID_13" structuralFeature="U:3cjrMOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_18" xsi:type="mapping:NestedPort" toPorts="ID_19" parent="ID_13" structuralFeature="U:3cjrMeaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_20" xsi:type="mapping:NestedPort" toPorts="ID_21" parent="ID_13" structuralFeature="U:3cjrMuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_22" xsi:type="mapping:NestedPort" toPorts="ID_23" parent="ID_13" structuralFeature="U:3cjrM-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_24" xsi:type="mapping:NestedPort" toPorts="ID_25" parent="ID_13" structuralFeature="U:3cjrNOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_26" xsi:type="mapping:NestedPort" toPorts="ID_27" parent="ID_13" structuralFeature="U:3cjrNeaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_28" xsi:type="mapping:NestedPort" toPorts="ID_29" parent="ID_13" structuralFeature="U:3cjrNuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_30" xsi:type="mapping:NestedPort" toPorts="ID_31" parent="ID_13" structuralFeature="U:3cjrN-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_32" xsi:type="mapping:NestedPort" toPorts="ID_33" parent="ID_13" structuralFeature="U:3cjrOOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_34" xsi:type="mapping:NestedPort" toPorts="ID_35" parent="ID_13" structuralFeature="U:3cjrOeaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_36" xsi:type="mapping:NestedPort" toPorts="ID_37" parent="ID_13" structuralFeature="U:3cjrOuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_38" xsi:type="mapping:NestedPort" toPorts="ID_39" parent="ID_13" structuralFeature="U:3cjrO-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_40" xsi:type="mapping:NestedPort" toPorts="ID_41" parent="ID_13" structuralFeature="U:3cjrPOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_42" xsi:type="mapping:NestedPort" toPorts="ID_43" parent="ID_13" structuralFeature="U:3cjrPeaJEeiVaeMu-h7pTQ"/>
+</children>
+</TransformationFieldPort>
+</ports>
+</Instance>
+<Instance imx:id="U:3cjDX-aJEeiVaeMu-h7pTQ" xsi:type="mapping:Instance" name="StoreInStore_Orders_S3_Write" toOutlineLinks="ID_12" transformation="U:3cjDYuaJEeiVaeMu-h7pTQ">
+<ports>
+<TransformationFieldPort imx:id="ID_44" xsi:type="mapping:TransformationFieldPort" instance="U:3cjDX-aJEeiVaeMu-h7pTQ" transformationField="U:3cjDZOaJEeiVaeMu-h7pTQ">
+<children>
+<NestedPort imx:id="ID_15" xsi:type="mapping:NestedPort" fromPort="ID_14" parent="ID_44" structuralFeature="U:3cjrFuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_17" xsi:type="mapping:NestedPort" fromPort="ID_16" parent="ID_44" structuralFeature="U:3cjrF-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_19" xsi:type="mapping:NestedPort" fromPort="ID_18" parent="ID_44" structuralFeature="U:3cjrGOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_21" xsi:type="mapping:NestedPort" fromPort="ID_20" parent="ID_44" structuralFeature="U:3cjrGeaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_23" xsi:type="mapping:NestedPort" fromPort="ID_22" parent="ID_44" structuralFeature="U:3cjrGuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_25" xsi:type="mapping:NestedPort" fromPort="ID_24" parent="ID_44" structuralFeature="U:3cjrG-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_27" xsi:type="mapping:NestedPort" fromPort="ID_26" parent="ID_44" structuralFeature="U:3cjrHOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_29" xsi:type="mapping:NestedPort" fromPort="ID_28" parent="ID_44" structuralFeature="U:3cjrHeaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_31" xsi:type="mapping:NestedPort" fromPort="ID_30" parent="ID_44" structuralFeature="U:3cjrHuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_33" xsi:type="mapping:NestedPort" fromPort="ID_32" parent="ID_44" structuralFeature="U:3cjrH-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_35" xsi:type="mapping:NestedPort" fromPort="ID_34" parent="ID_44" structuralFeature="U:3cjrIOaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_37" xsi:type="mapping:NestedPort" fromPort="ID_36" parent="ID_44" structuralFeature="U:3cjrIeaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_39" xsi:type="mapping:NestedPort" fromPort="ID_38" parent="ID_44" structuralFeature="U:3cjrIuaJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_41" xsi:type="mapping:NestedPort" fromPort="ID_40" parent="ID_44" structuralFeature="U:3cjrI-aJEeiVaeMu-h7pTQ"/>
+<NestedPort imx:id="ID_43" xsi:type="mapping:NestedPort" fromPort="ID_42" parent="ID_44" structuralFeature="U:3cjrJOaJEeiVaeMu-h7pTQ"/>
+</children>
+</TransformationFieldPort>
+</ports>
+</Instance>
+</instances>
+<transformations>
+<AbstractTransformation imx:id="U:3cjDYOaJEeiVaeMu-h7pTQ" xsi:type="source:SourceTx" active="true" name="Read_RAW_StoreInStore_Orders" dso="U:3cjrK-aJEeiVaeMu-h7pTQ">
+<sourceInterfaces>
+<SourceDataInterface imx:id="U:3cjDduaJEeiVaeMu-h7pTQ" xsi:type="source:SourceDataInterface" name="Group" output="true">
+<sourceFields>
+<SourceTxField imx:id="U:3cjDd-aJEeiVaeMu-h7pTQ" xsi:type="source:SourceTxField" type="U:3cjrLuaJEeiVaeMu-h7pTQ" name="output" output="true"/>
+</sourceFields>
+</SourceDataInterface>
+</sourceInterfaces>
+</AbstractTransformation>
+<AbstractTransformation imx:id="U:3cjDYuaJEeiVaeMu-h7pTQ" xsi:type="target:TargetTx" active="true" name="StoreInStore_Orders_S3_Write" dso="U:3cjDyOaJEeiVaeMu-h7pTQ">
+<targetInterfaces>
+<TargetDataInterface imx:id="U:3cjDY-aJEeiVaeMu-h7pTQ" xsi:type="target:TargetDataInterface" input="true" name="Group">
+<targetFields>
+<TargetTxField imx:id="U:3cjDZOaJEeiVaeMu-h7pTQ" xsi:type="target:TargetTxField" type="U:3cjDyeaJEeiVaeMu-h7pTQ" input="true" name="Input"/>
+</targetFields>
+</TargetDataInterface>
+</targetInterfaces>
+</AbstractTransformation>
+</transformations>
+</IObject>
+<IObject imx:id="U:3cjDeOaJEeiVaeMu-h7pTQ" xsi:type="aso:D_GenericComplexASO" name="StoreInStore_Orders_S3" extensionId="com.infa.adapter.amazons3" lGraphs="U:3cjrJuaJEeiVaeMu-h7pTQ" nmoType="amazons3" patternName="AmazonS3AmazonS3_AmazonS3_Pattern">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*" key2="defaultRuntimeConfig%2FconnectInfo%2F%24identity" value2="stringIdentity:S3_Bucket" key3=".%5B%7BnmoType%3Damazons3%7D%26%7BextensionId%3Dcom.infa.adapter.amazons3%7D%5D%2Fname%21%3Dnull" value3="true" key4="nmoType" value4="amazons3" key5="extensionId" value5="com.infa.adapter.amazons3" key6="defaultRuntimeConfig%2F%28com.informatica.metadata.common.parameter.UserDefinedParameter%29connectionName%24%2F%28com.informatica.metadata.common.parameter.ConnectionParameterValue%29defaultValue%2FconnectionName" value6="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<annotations>
+<Annotation imx:id="ID_45" xsi:type="genericannotation:GenericAnnotation">
+<nameValuePairs>
+<NameValuePair imx:id="ID_46" xsi:type="genericannotation:NameValuePair" name="MetaDataAccessTypeUsed">
+<value xsi:type="types:StringValue" valueLiteral="CONNECTION_BASED"/>
+</NameValuePair>
+<NameValuePair imx:id="ID_48" xsi:type="genericannotation:NameValuePair" name="ResourceFormat">
+<value xsi:type="types:StringValue" valueLiteral="Avro"/>
+</NameValuePair>
+</nameValuePairs>
+</Annotation>
+</annotations>
+<asoOperations>
+<D_ASOOperation imx:id="U:3cjDyOaJEeiVaeMu-h7pTQ" xsi:type="aso:D_ASOOperation" dataSource="U:3cjDeOaJEeiVaeMu-h7pTQ" name="StoreInStore_Orders_S3_Write" baseASO="U:3cjDeOaJEeiVaeMu-h7pTQ" operationType="AmazonS3Write" typeSystem="smd:com.infa.adapter.amazons3.typesystem.AmazonS3TypeSystem.typesystem">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="operations%400%2F%24metaClass%3D%22com.informatica.metadata.common.datasourceoperation.WriteCapability%22" value1="true" key2=".%5B%7B%28com.informatica.adapter.sdkadapter.aso.D_ASO%29%24fcContainer%2FnmoType%3Damazons3%7D+%26%7B%28com.informatica.adapter.sdkadapter.aso.D_ASO%29%24fcContainer%2FextensionId%3Dcom.infa.adapter.amazons3%7D%5D%2Fname+%21%3D+null" value2="true" key3="operationType" value3="AmazonS3Write" key4="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value4="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<operations>
+<Capability imx:id="ID_50" xsi:type="datasourceoperation1:WriteCapability" defaultAdapter="smd:com.informatica.adapter.seed.sdkadapter.CanonicalSDKAdapter.sdkDataAdapter" defaultConfig="U:3cjDeeaJEeiVaeMu-h7pTQ">
+<inGroups>
+<DataAccessGroup imx:id="ID_51" xsi:type="datasourceoperation1:DataAccessGroup" groupType="U:3cjDyeaJEeiVaeMu-h7pTQ"/>
+</inGroups>
+</Capability>
+</operations>
+<ownedCapabilityTypes>
+<ComplexType imx:id="U:3cjDyeaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_ComplexType" projectionBindings="U:3cjq2-aJEeiVaeMu-h7pTQ">
+<features>
+<StructuralFeature imx:id="U:3cjrFuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="STORE_ID" precision="15"/>
+<StructuralFeature imx:id="U:3cjrF-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="CUSTOMER_ID" precision="15"/>
+<StructuralFeature imx:id="U:3cjrGOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="ORDERID" precision="15"/>
+<StructuralFeature imx:id="U:3cjrGeaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="TERMINAL" precision="4000"/>
+<StructuralFeature imx:id="U:3cjrGuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="MERCHANT" precision="15"/>
+<StructuralFeature imx:id="U:3cjrG-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="PERIOD" precision="15"/>
+<StructuralFeature imx:id="U:3cjrHOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="PAYMENT" precision="4000"/>
+<StructuralFeature imx:id="U:3cjrHeaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="CARDNUMBER" precision="4000"/>
+<StructuralFeature imx:id="U:3cjrHuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="ORDERDATE" precision="15"/>
+<StructuralFeature imx:id="U:3cjrH-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="POS_TIME" precision="15"/>
+<StructuralFeature imx:id="U:3cjrIOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="TOTALAMOUNTEXVAT" precision="15"/>
+<StructuralFeature imx:id="U:3cjrIeaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="TOTALAMOUNTVAT" precision="15"/>
+<StructuralFeature imx:id="U:3cjrIuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="TOTALAMOUNT" precision="15"/>
+<StructuralFeature imx:id="U:3cjrI-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="ORDERTYPE" precision="4000"/>
+<StructuralFeature imx:id="U:3cjrJOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="LOAD_DATE" precision="4000"/>
+<StructuralFeature imx:id="U:3cjrJeaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="ORDERTYPE_override" precision="4000"/>
+</features>
+</ComplexType>
+</ownedCapabilityTypes>
+<typeLibrary imx:id="U:3cjq2uaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:TypeLibrary"/>
+<projections>
+<D_Projection imx:id="U:3cjq2-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_Projection" outputProjection="true">
+<operations>
+<D_OperationBase imx:id="U:3cjq3OaJEeiVaeMu-h7pTQ" xsi:type="sourceoperation:D_PlatformSource" name="PlatformSource" group="U:3cjDyeaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjrBuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="STORE_ID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrFuaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrB-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="CUSTOMER_ID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrF-aJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrCOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="ORDERID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrGOaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrCeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="TERMINAL" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" structuralFeature="U:3cjrGeaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrCuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="MERCHANT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrGuaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrC-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="PERIOD" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrG-aJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrDOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="PAYMENT" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" structuralFeature="U:3cjrHOaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrDeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="CARDNUMBER" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" structuralFeature="U:3cjrHeaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrDuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="ORDERDATE" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrHuaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrD-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="POS_TIME" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrH-aJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrEOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="TOTALAMOUNTEXVAT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrIOaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrEeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="TOTALAMOUNTVAT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrIeaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrEuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="TOTALAMOUNT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" structuralFeature="U:3cjrIuaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrE-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="ORDERTYPE" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" structuralFeature="U:3cjrI-aJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrFOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="LOAD_DATE" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" structuralFeature="U:3cjrJOaJEeiVaeMu-h7pTQ"/>
+<D_FieldBase imx:id="U:3cjrFeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_PlatformField" name="ORDERTYPE_override" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" structuralFeature="U:3cjrJeaJEeiVaeMu-h7pTQ"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjq3eaJEeiVaeMu-h7pTQ" xsi:type="sourceoperation:D_PlatformSource" name="PlatformSource_data">
+<fields>
+<D_FieldBase imx:id="U:3cjq9uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrBuaJEeiVaeMu-h7pTQ" name="STORE_ID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq9-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrB-aJEeiVaeMu-h7pTQ" name="CUSTOMER_ID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq-OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrCOaJEeiVaeMu-h7pTQ" name="ORDERID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq-eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrCeaJEeiVaeMu-h7pTQ" name="TERMINAL" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq-uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrCuaJEeiVaeMu-h7pTQ" name="MERCHANT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq--aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrC-aJEeiVaeMu-h7pTQ" name="PERIOD" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq_OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrDOaJEeiVaeMu-h7pTQ" name="PAYMENT" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq_eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrDeaJEeiVaeMu-h7pTQ" name="CARDNUMBER" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq_uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrDuaJEeiVaeMu-h7pTQ" name="ORDERDATE" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq_-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrD-aJEeiVaeMu-h7pTQ" name="POS_TIME" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjrAOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrEOaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTEXVAT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjrAeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrEeaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTVAT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjrAuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrEuaJEeiVaeMu-h7pTQ" name="TOTALAMOUNT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjrA-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrE-aJEeiVaeMu-h7pTQ" name="ORDERTYPE" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjrBOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrFOaJEeiVaeMu-h7pTQ" name="LOAD_DATE" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjrBeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrFeaJEeiVaeMu-h7pTQ" name="ORDERTYPE_override" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjq3uaJEeiVaeMu-h7pTQ" xsi:type="mergeoperation:D_MergeOperation" name="MergeDeserializer" inputLeftOperation="U:3cjq3OaJEeiVaeMu-h7pTQ" mergeType="DESERIALIZE" replacementFieldEnd="U:3cjrFeaJEeiVaeMu-h7pTQ" replacementFieldStart="U:3cjrBuaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjq9eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_ComplexField" name="data" operation="U:3cjq3eaJEeiVaeMu-h7pTQ"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjq3-aJEeiVaeMu-h7pTQ" xsi:type="conversionoperation:D_ConversionOperation" name="TypeConvert" inputOperation="U:3cjq3uaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjq9OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_ComplexField" ancestorField="U:3cjq9eaJEeiVaeMu-h7pTQ" name="data" operation="U:3cjq4OaJEeiVaeMu-h7pTQ"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjq4OaJEeiVaeMu-h7pTQ" xsi:type="conversionoperation:D_ConversionOperation" name="TypeConvert_PlatformSource_data" inputOperation="U:3cjq3eaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjq5OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq9uaJEeiVaeMu-h7pTQ" name="STORE_ID" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq5eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq9-aJEeiVaeMu-h7pTQ" name="CUSTOMER_ID" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjq5uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq-OaJEeiVaeMu-h7pTQ" name="ORDERID" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq5-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq-eaJEeiVaeMu-h7pTQ" name="TERMINAL" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq6OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq-uaJEeiVaeMu-h7pTQ" name="MERCHANT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq6eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq--aJEeiVaeMu-h7pTQ" name="PERIOD" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq6uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq_OaJEeiVaeMu-h7pTQ" name="PAYMENT" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq6-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq_eaJEeiVaeMu-h7pTQ" name="CARDNUMBER" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq7OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq_uaJEeiVaeMu-h7pTQ" name="ORDERDATE" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq7eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq_-aJEeiVaeMu-h7pTQ" name="POS_TIME" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq7uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrAOaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTEXVAT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq7-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrAeaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTVAT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq8OaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrAuaJEeiVaeMu-h7pTQ" name="TOTALAMOUNT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjq8eaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrA-aJEeiVaeMu-h7pTQ" name="ORDERTYPE" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq8uaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrBOaJEeiVaeMu-h7pTQ" name="LOAD_DATE" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjq8-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjrBeaJEeiVaeMu-h7pTQ" name="ORDERTYPE_override" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjq4eaJEeiVaeMu-h7pTQ" xsi:type="mergeoperation:D_MergeOperation" name="MergeSerializer" inputLeftOperation="U:3cjq3-aJEeiVaeMu-h7pTQ" mergedFields="U:3cjq4-aJEeiVaeMu-h7pTQ" replacementFieldEnd="U:3cjq9OaJEeiVaeMu-h7pTQ" replacementFieldStart="U:3cjq9OaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjq4-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjq9OaJEeiVaeMu-h7pTQ" name="data" precision="65535" type="smd:com.infa.adapter.amazons3.typesystem.AmazonS3TypeSystem.typesystem%2Fbinary"/>
+</fields>
+<dataFormatConfigs>
+<L_DataFormatConfig imx:id="ID_52" xsi:type="dataformatconfig:P_DataFormatConfig" dataFormat="Avro" schema="%7B%22type%22:%22record%22%2C%22name%22:%22StoreInStore_Orders_S3%22%2C%22fields%22:%5B%7B+%22name%22:%22STORE_ID%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22CUSTOMER_ID%22+%2C+%22type%22:%22double%22%7D+%2C+%7B+%22name%22:%22ORDERID%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TERMINAL%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22MERCHANT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22PERIOD%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22PAYMENT%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22CARDNUMBER%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22ORDERDATE%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22POS_TIME%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNTEXVAT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNTVAT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22ORDERTYPE%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22LOAD_DATE%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22ORDERTYPE_override%22+%2C+%22type%22:%22string%22%7D%5D%7D"/>
+</dataFormatConfigs>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjq4uaJEeiVaeMu-h7pTQ" xsi:type="sinkoperation:D_NativeSink" name="NativeSink" inputOperation="U:3cjq4eaJEeiVaeMu-h7pTQ" node="U:3cjrJ-aJEeiVaeMu-h7pTQ"/>
+</operations>
+</D_Projection>
+</projections>
+<writeCapAttributes>
+<D_WriteCapabilityAttributes imx:id="ID_53" xsi:type="capabilityattribute:D_WriteCapabilityAttributes">
+<modelExtension imx:id="ID_54" xsi:type="asoextension:D_GenericModelExtensionWriteCapAttributes">
+<genericContainer imx:id="ID_55" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.amazons3.runtime.capability.AmazonS3WriteCapabilityAttributesExtension" markerClass="com.informatica.adapter.sdkadapter.capabilityattribute.D_WriteCapabilityAttributes" version="1.0.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_56" xsi:type="genericextension:ExtensionAttribute" propertyName="EnableCompression">
+<propertyValue imx:id="ID_57" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_58" xsi:type="genericextension:ExtensionAttribute" propertyName="S3EncryptionType">
+<propertyValue imx:id="ID_59" xsi:type="genericextension:StringValue" dataValue="None"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_60" xsi:type="genericextension:ExtensionAttribute" propertyName="S3FolderPath">
+<propertyValue imx:id="ID_61" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_62" xsi:type="genericextension:ExtensionAttribute" propertyName="S3FolderPath%24">
+<propertyValue imx:id="ID_63" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_64" xsi:type="genericextension:ExtensionAttribute" propertyName="additionalDistCpOptions">
+<propertyValue imx:id="ID_65" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_66" xsi:type="genericextension:ExtensionAttribute" propertyName="additionalDistCpOptions%24">
+<propertyValue imx:id="ID_67" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_68" xsi:type="genericextension:ExtensionAttribute" propertyName="compressionFormat">
+<propertyValue imx:id="ID_69" xsi:type="genericextension:StringValue" dataValue="None"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_70" xsi:type="genericextension:ExtensionAttribute" propertyName="overwriteFileIfExists">
+<propertyValue imx:id="ID_71" xsi:type="genericextension:BooleanValue" dataValue="true"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_72" xsi:type="genericextension:ExtensionAttribute" propertyName="stageFileMerging">
+<propertyValue imx:id="ID_73" xsi:type="genericextension:BooleanValue" dataValue="true"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_74" xsi:type="genericextension:ExtensionAttribute" propertyName="targetName">
+<propertyValue imx:id="ID_75" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_76" xsi:type="genericextension:ExtensionAttribute" propertyName="targetName%24">
+<propertyValue imx:id="ID_77" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_78" xsi:type="genericextension:ExtensionAttribute" propertyName="tempFolderPath">
+<propertyValue imx:id="ID_79" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_80" xsi:type="genericextension:ExtensionAttribute" propertyName="tempFolderPath%24">
+<propertyValue imx:id="ID_81" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</modelExtension>
+</D_WriteCapabilityAttributes>
+</writeCapAttributes>
+</D_ASOOperation>
+<D_ASOOperation imx:id="U:3cjDeuaJEeiVaeMu-h7pTQ" xsi:type="aso:D_ASOOperation" dataSource="U:3cjDeOaJEeiVaeMu-h7pTQ" name="StoreInStore_Orders_S3_Read" baseASO="U:3cjDeOaJEeiVaeMu-h7pTQ" operationType="AmazonS3Read" typeSystem="smd:com.infa.adapter.amazons3.typesystem.AmazonS3TypeSystem.typesystem">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1=".%5B%7B%28com.informatica.adapter.sdkadapter.aso.D_ASO%29%24fcContainer%2FnmoType%3Damazons3%7D+%26%7B%28com.informatica.adapter.sdkadapter.aso.D_ASO%29%24fcContainer%2FextensionId%3Dcom.infa.adapter.amazons3%7D%5D%2Fname+%21%3D+null" value1="true" key2="operationType" value2="AmazonS3Read" key3="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value3="*" key4="operations%400%2F%24metaClass%3D%22com.informatica.metadata.common.datasourceoperation.ReadCapability%22" value4="true"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<operations>
+<Capability imx:id="ID_82" xsi:type="datasourceoperation1:ReadCapability" defaultAdapter="smd:com.informatica.adapter.seed.sdkadapter.CanonicalSDKAdapter.sdkDataAdapter" defaultConfig="U:3cjDeeaJEeiVaeMu-h7pTQ">
+<outGroups>
+<DataAccessGroup imx:id="ID_83" xsi:type="datasourceoperation1:DataAccessGroup" groupType="U:3cjDe-aJEeiVaeMu-h7pTQ"/>
+</outGroups>
+</Capability>
+</operations>
+<ownedCapabilityTypes>
+<ComplexType imx:id="U:3cjDe-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_ComplexType" projectionBindings="U:3cjDfeaJEeiVaeMu-h7pTQ">
+<features>
+<StructuralFeature imx:id="U:3cjDuOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="STORE_ID" precision="15"/>
+<StructuralFeature imx:id="U:3cjDueaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="CUSTOMER_ID" precision="15"/>
+<StructuralFeature imx:id="U:3cjDuuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="ORDERID" precision="15"/>
+<StructuralFeature imx:id="U:3cjDu-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="TERMINAL" precision="4000"/>
+<StructuralFeature imx:id="U:3cjDvOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="MERCHANT" precision="15"/>
+<StructuralFeature imx:id="U:3cjDveaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="PERIOD" precision="15"/>
+<StructuralFeature imx:id="U:3cjDvuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="PAYMENT" precision="4000"/>
+<StructuralFeature imx:id="U:3cjDv-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="CARDNUMBER" precision="4000"/>
+<StructuralFeature imx:id="U:3cjDwOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="ORDERDATE" precision="15"/>
+<StructuralFeature imx:id="U:3cjDweaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="POS_TIME" precision="15"/>
+<StructuralFeature imx:id="U:3cjDwuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="TOTALAMOUNTEXVAT" precision="15"/>
+<StructuralFeature imx:id="U:3cjDw-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="TOTALAMOUNTVAT" precision="15"/>
+<StructuralFeature imx:id="U:3cjDxOaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" name="TOTALAMOUNT" precision="15"/>
+<StructuralFeature imx:id="U:3cjDxeaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="ORDERTYPE" precision="4000"/>
+<StructuralFeature imx:id="U:3cjDxuaJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="LOAD_DATE" precision="4000"/>
+<StructuralFeature imx:id="U:3cjDx-aJEeiVaeMu-h7pTQ" xsi:type="capabilityattribute:D_StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" name="ORDERTYPE_override" precision="4000"/>
+</features>
+</ComplexType>
+</ownedCapabilityTypes>
+<typeLibrary imx:id="U:3cjDfOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:TypeLibrary"/>
+<projections>
+<D_Projection imx:id="U:3cjDfeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_Projection">
+<operations>
+<D_OperationBase imx:id="U:3cjDfuaJEeiVaeMu-h7pTQ" xsi:type="sourceoperation:D_NativeSource" name="NativeSource_StoreInStore_Orders_S3" node="U:3cjrJ-aJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjDt-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_NativeField" name="data" sdkField="U:3cjrKOaJEeiVaeMu-h7pTQ"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjDf-aJEeiVaeMu-h7pTQ" xsi:type="sourceoperation:D_NativeSource" name="NativeSource_data">
+<fields>
+<D_FieldBase imx:id="U:3cjDp-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="STORE_ID" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDqOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="CUSTOMER_ID" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDqeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="ORDERID" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDquaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="TERMINAL" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDq-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="MERCHANT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDrOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="PERIOD" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDreaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="PAYMENT" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDruaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="CARDNUMBER" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDr-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="ORDERDATE" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDsOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="POS_TIME" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDseaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="TOTALAMOUNTEXVAT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDsuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="TOTALAMOUNTVAT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDs-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="TOTALAMOUNT" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Ffloat"/>
+<D_FieldBase imx:id="U:3cjDtOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="ORDERTYPE" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDteaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="LOAD_DATE" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDtuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" name="ORDERTYPE_override" precision="4000" type="smd:com.informatica.adapter.avroparser.typesystem.AvroParserTypeSystem.typesystem%2Fstring"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjDgOaJEeiVaeMu-h7pTQ" xsi:type="mergeoperation:D_MergeOperation" name="MergeDeserializer" inputLeftOperation="U:3cjDfuaJEeiVaeMu-h7pTQ" mergeType="DESERIALIZE" mergedFields="U:3cjDt-aJEeiVaeMu-h7pTQ" replacementFieldEnd="U:3cjDt-aJEeiVaeMu-h7pTQ" replacementFieldStart="U:3cjDt-aJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjDpuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_ComplexField" ancestorField="U:3cjDt-aJEeiVaeMu-h7pTQ" name="data" operation="U:3cjDf-aJEeiVaeMu-h7pTQ"/>
+</fields>
+<dataFormatConfigs>
+<L_DataFormatConfig imx:id="ID_84" xsi:type="dataformatconfig:P_DataFormatConfig" dataFormat="Avro" schema="%7B%22type%22:%22record%22%2C%22name%22:%22StoreInStore_Orders_S3%22%2C%22fields%22:%5B%7B+%22name%22:%22STORE_ID%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22CUSTOMER_ID%22+%2C+%22type%22:%22double%22%7D+%2C+%7B+%22name%22:%22ORDERID%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TERMINAL%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22MERCHANT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22PERIOD%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22PAYMENT%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22CARDNUMBER%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22ORDERDATE%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22POS_TIME%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNTEXVAT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNTVAT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22ORDERTYPE%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22LOAD_DATE%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22ORDERTYPE_override%22+%2C+%22type%22:%22string%22%7D%5D%7D"/>
+</dataFormatConfigs>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjDgeaJEeiVaeMu-h7pTQ" xsi:type="conversionoperation:D_ConversionOperation" name="TypeConvert" inputOperation="U:3cjDgOaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjDpeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_ComplexField" ancestorField="U:3cjDpuaJEeiVaeMu-h7pTQ" name="data" operation="U:3cjDguaJEeiVaeMu-h7pTQ"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjDguaJEeiVaeMu-h7pTQ" xsi:type="conversionoperation:D_ConversionOperation" name="TypeConvert_NativeSource_data" inputOperation="U:3cjDf-aJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjDleaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDp-aJEeiVaeMu-h7pTQ" name="STORE_ID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDluaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDqOaJEeiVaeMu-h7pTQ" name="CUSTOMER_ID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDl-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDqeaJEeiVaeMu-h7pTQ" name="ORDERID" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDmOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDquaJEeiVaeMu-h7pTQ" name="TERMINAL" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDmeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDq-aJEeiVaeMu-h7pTQ" name="MERCHANT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDmuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDrOaJEeiVaeMu-h7pTQ" name="PERIOD" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDm-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDreaJEeiVaeMu-h7pTQ" name="PAYMENT" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDnOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDruaJEeiVaeMu-h7pTQ" name="CARDNUMBER" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDneaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDr-aJEeiVaeMu-h7pTQ" name="ORDERDATE" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDnuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDsOaJEeiVaeMu-h7pTQ" name="POS_TIME" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDn-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDseaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTEXVAT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDoOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDsuaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTVAT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDoeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDs-aJEeiVaeMu-h7pTQ" name="TOTALAMOUNT" precision="15" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble"/>
+<D_FieldBase imx:id="U:3cjDouaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDtOaJEeiVaeMu-h7pTQ" name="ORDERTYPE" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDo-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDteaJEeiVaeMu-h7pTQ" name="LOAD_DATE" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+<D_FieldBase imx:id="U:3cjDpOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_DerivedField" ancestorField="U:3cjDtuaJEeiVaeMu-h7pTQ" name="ORDERTYPE_override" precision="4000" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjDg-aJEeiVaeMu-h7pTQ" xsi:type="mergeoperation:D_MergeOperation" name="MergeSerializer" inputLeftOperation="U:3cjDgeaJEeiVaeMu-h7pTQ" replacementFieldEnd="U:3cjDpeaJEeiVaeMu-h7pTQ" replacementFieldStart="U:3cjDpeaJEeiVaeMu-h7pTQ">
+<fields>
+<D_FieldBase imx:id="U:3cjDheaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDleaJEeiVaeMu-h7pTQ" name="STORE_ID"/>
+<D_FieldBase imx:id="U:3cjDhuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDluaJEeiVaeMu-h7pTQ" name="CUSTOMER_ID"/>
+<D_FieldBase imx:id="U:3cjDh-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDl-aJEeiVaeMu-h7pTQ" name="ORDERID"/>
+<D_FieldBase imx:id="U:3cjDiOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDmOaJEeiVaeMu-h7pTQ" name="TERMINAL"/>
+<D_FieldBase imx:id="U:3cjDieaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDmeaJEeiVaeMu-h7pTQ" name="MERCHANT"/>
+<D_FieldBase imx:id="U:3cjDiuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDmuaJEeiVaeMu-h7pTQ" name="PERIOD"/>
+<D_FieldBase imx:id="U:3cjDi-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDm-aJEeiVaeMu-h7pTQ" name="PAYMENT"/>
+<D_FieldBase imx:id="U:3cjDjOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDnOaJEeiVaeMu-h7pTQ" name="CARDNUMBER"/>
+<D_FieldBase imx:id="U:3cjDjeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDneaJEeiVaeMu-h7pTQ" name="ORDERDATE"/>
+<D_FieldBase imx:id="U:3cjDjuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDnuaJEeiVaeMu-h7pTQ" name="POS_TIME"/>
+<D_FieldBase imx:id="U:3cjDj-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDn-aJEeiVaeMu-h7pTQ" name="TOTALAMOUNTEXVAT"/>
+<D_FieldBase imx:id="U:3cjDkOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDoOaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTVAT"/>
+<D_FieldBase imx:id="U:3cjDkeaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDoeaJEeiVaeMu-h7pTQ" name="TOTALAMOUNT"/>
+<D_FieldBase imx:id="U:3cjDkuaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDouaJEeiVaeMu-h7pTQ" name="ORDERTYPE"/>
+<D_FieldBase imx:id="U:3cjDk-aJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDo-aJEeiVaeMu-h7pTQ" name="LOAD_DATE"/>
+<D_FieldBase imx:id="U:3cjDlOaJEeiVaeMu-h7pTQ" xsi:type="projection:D_OpFieldRef" ancestorField="U:3cjDpOaJEeiVaeMu-h7pTQ" name="ORDERTYPE_override"/>
+</fields>
+</D_OperationBase>
+<D_OperationBase imx:id="U:3cjDhOaJEeiVaeMu-h7pTQ" xsi:type="sinkoperation:D_PlatformSink" name="PlatformSink" inputOperation="U:3cjDg-aJEeiVaeMu-h7pTQ" groupType="U:3cjDe-aJEeiVaeMu-h7pTQ"/>
+</operations>
+</D_Projection>
+</projections>
+<readCapAttributes>
+<D_ReadCapabilityAttributes imx:id="ID_85" xsi:type="capabilityattribute:D_ReadCapabilityAttributes">
+<modelExtension imx:id="ID_86" xsi:type="asoextension:D_GenericModelExtensionReadCapAttributes">
+<genericContainer imx:id="ID_87" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.amazons3.runtime.capability.AmazonS3ReadCapabilityAttributesExtension" markerClass="com.informatica.adapter.sdkadapter.capabilityattribute.D_ReadCapabilityAttributes" version="1.0.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_88" xsi:type="genericextension:ExtensionAttribute" propertyName="EnableCompression">
+<propertyValue imx:id="ID_89" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_90" xsi:type="genericextension:ExtensionAttribute" propertyName="MultiPartDownload">
+<propertyValue imx:id="ID_91" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_92" xsi:type="genericextension:ExtensionAttribute" propertyName="S3EncryptionType">
+<propertyValue imx:id="ID_93" xsi:type="genericextension:StringValue" dataValue="None"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_94" xsi:type="genericextension:ExtensionAttribute" propertyName="S3EncryptionType%24">
+<propertyValue imx:id="ID_95" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_96" xsi:type="genericextension:ExtensionAttribute" propertyName="S3FolderPath">
+<propertyValue imx:id="ID_97" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_98" xsi:type="genericextension:ExtensionAttribute" propertyName="S3FolderPath%24">
+<propertyValue imx:id="ID_99" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_100" xsi:type="genericextension:ExtensionAttribute" propertyName="additionalDistCpOptions">
+<propertyValue imx:id="ID_101" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_102" xsi:type="genericextension:ExtensionAttribute" propertyName="additionalDistCpOptions%24">
+<propertyValue imx:id="ID_103" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_104" xsi:type="genericextension:ExtensionAttribute" propertyName="compressionFormat">
+<propertyValue imx:id="ID_105" xsi:type="genericextension:StringValue" dataValue="None"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_106" xsi:type="genericextension:ExtensionAttribute" propertyName="overrideDynFileMetadata">
+<propertyValue imx:id="ID_107" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_108" xsi:type="genericextension:ExtensionAttribute" propertyName="sourceType">
+<propertyValue imx:id="ID_109" xsi:type="genericextension:StringValue" dataValue="File"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_110" xsi:type="genericextension:ExtensionAttribute" propertyName="targetName">
+<propertyValue imx:id="ID_111" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_112" xsi:type="genericextension:ExtensionAttribute" propertyName="targetName%24">
+<propertyValue imx:id="ID_113" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_114" xsi:type="genericextension:ExtensionAttribute" propertyName="tempFolderPath">
+<propertyValue imx:id="ID_115" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_116" xsi:type="genericextension:ExtensionAttribute" propertyName="tempFolderPath%24">
+<propertyValue imx:id="ID_117" xsi:type="genericextension:ParameterValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</modelExtension>
+</D_ReadCapabilityAttributes>
+</readCapAttributes>
+</D_ASOOperation>
+</asoOperations>
+<defaultRuntimeConfig imx:id="U:3cjDeeaJEeiVaeMu-h7pTQ" xsi:type="asoconfig:D_ASORuntimeConfig" connectInfo="stringIdentity:S3_Bucket" connectionName="S3_Bucket"/>
+<lGraph imx:id="U:3cjrJuaJEeiVaeMu-h7pTQ" xsi:type="catalog:P_Catalog" extensionId="com.infa.adapter.amazons3" name="graph" nmoType="amazons3">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<nodes>
+<L_Node imx:id="U:3cjrJ-aJEeiVaeMu-h7pTQ" xsi:type="flatrecord:P_FlatRecord" nativeName="StoreInStore_Orders_S3" name="StoreInStore_Orders_S3">
+<extensions imx:id="ID_118" xsi:type="logical:L_GenericModelExtensionNode">
+<genericContainer imx:id="ID_119" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.amazons3.metadata.AmazonS3RecordExtensions" markerClass="com.informatica.adapter.sdkadapter.patternblocks.flatrecord.P_FlatRecord" version="1.0.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_120" xsi:type="genericextension:ExtensionAttribute" propertyName="eTag">
+<propertyValue imx:id="ID_121" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_122" xsi:type="genericextension:ExtensionAttribute" propertyName="lastModified">
+<propertyValue imx:id="ID_123" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_124" xsi:type="genericextension:ExtensionAttribute" propertyName="ownerId">
+<propertyValue imx:id="ID_125" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_126" xsi:type="genericextension:ExtensionAttribute" propertyName="ownerName">
+<propertyValue imx:id="ID_127" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_128" xsi:type="genericextension:ExtensionAttribute" propertyName="recordSize">
+<propertyValue imx:id="ID_129" xsi:type="genericextension:LongValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</extensions>
+<fields>
+<L_FieldBase imx:id="U:3cjrKOaJEeiVaeMu-h7pTQ" xsi:type="field:P_Field" name="data" nativeName="data" type="smd:com.infa.adapter.amazons3.typesystem.AmazonS3TypeSystem.typesystem%2Fbinary" length="65535" precision="65535">
+<typeConfig imx:id="ID_130" xsi:type="logical:L_TypeConfig">
+<dataFormatConfig imx:id="ID_131" xsi:type="dataformatconfig:P_DataFormatConfig" dataFormat="Avro" schema="%7B%22type%22:%22record%22%2C%22name%22:%22StoreInStore_Orders_S3%22%2C%22fields%22:%5B%7B+%22name%22:%22STORE_ID%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22CUSTOMER_ID%22+%2C+%22type%22:%22double%22%7D+%2C+%7B+%22name%22:%22ORDERID%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TERMINAL%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22MERCHANT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22PERIOD%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22PAYMENT%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22CARDNUMBER%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22ORDERDATE%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22POS_TIME%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNTEXVAT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNTVAT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22TOTALAMOUNT%22+%2C+%22type%22:%22float%22%7D+%2C+%7B+%22name%22:%22ORDERTYPE%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22LOAD_DATE%22+%2C+%22type%22:%22string%22%7D+%2C+%7B+%22name%22:%22ORDERTYPE_override%22+%2C+%22type%22:%22string%22%7D%5D%7D"/>
+</typeConfig>
+<extensions imx:id="ID_132" xsi:type="logical:L_GenericModelExtensionFieldBase">
+<genericContainer imx:id="ID_133" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.amazons3.metadata.AmazonS3FieldExtensions" markerClass="com.informatica.adapter.sdkadapter.patternblocks.field.P_Field" version="1.0.0"/>
+</extensions>
+</L_FieldBase>
+</fields>
+</L_Node>
+</nodes>
+</lGraph>
+<genericContainer imx:id="ID_134" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.runtime.aso.ComplexASO"/>
+</IObject>
+<IObject imx:id="U:3cjrKeaJEeiVaeMu-h7pTQ" xsi:type="datasource:FlatByteDataSource" name="RAW_StoreInStore_Orders">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="uploaded" value1="false" key2="defaultReaderConfig%2FsourceFileDirectory" value2="%2Fuser%2Finfa%2Facme%2Fsis%2Fraw_sis_orders" key3="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value3="*" key4="defaultReaderConfig%2FsourceFileName" value4="sis_orders.csv" key5="defaultReaderConfig%2F%28com.informatica.metadata.flatbyte.hdfs.extension.HDFSFlatbyteExtension%29modelExtension%2FconnectInfo%2F%24identity" value5="stringIdentity:HDFS_CDH_513"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<fileDefinitions>
+<FlatByteDefinition imx:id="U:3cjrTuaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteDefinition" codePageObject="smd:com.informatica.metadata.seed.platform.CodePages.codepagesystem%2F106" defaultDateFormat="A++19+YYYY-MM-DD+HH24:MI:SS" defaultDecimalSeparator="." name="FileByteDefinition">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<columns>
+<FlatByteColumn imx:id="U:3cjrT-aJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="STORE_ID" precision="10"/>
+<FlatByteColumn imx:id="U:3cjrUOaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fdouble" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="CUSTOMER_ID" precision="15"/>
+<FlatByteColumn imx:id="U:3cjrUeaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="ORDERID" precision="15"/>
+<FlatByteColumn imx:id="U:3cjrUuaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="TERMINAL" precision="10"/>
+<FlatByteColumn imx:id="U:3cjrU-aJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="MERCHANT" precision="10"/>
+<FlatByteColumn imx:id="U:3cjrVOaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="PERIOD" precision="6"/>
+<FlatByteColumn imx:id="U:3cjrVeaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="PAYMENT" precision="50"/>
+<FlatByteColumn imx:id="U:3cjrVuaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="CARDNUMBER" precision="25"/>
+<FlatByteColumn imx:id="U:3cjrV-aJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="ORDERDATE" precision="8"/>
+<FlatByteColumn imx:id="U:3cjrWOaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="POS_TIME" precision="6"/>
+<FlatByteColumn imx:id="U:3cjrWeaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTEXVAT" precision="10" scale="2"/>
+<FlatByteColumn imx:id="U:3cjrWuaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="TOTALAMOUNTVAT" precision="10" scale="2"/>
+<FlatByteColumn imx:id="U:3cjrW-aJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="TOTALAMOUNT" precision="10" scale="2"/>
+<FlatByteColumn imx:id="U:3cjrXOaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="ORDERTYPE" precision="20"/>
+<FlatByteColumn imx:id="U:3cjrXeaJEeiVaeMu-h7pTQ" xsi:type="datarecord:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fdatetime" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" name="LOAD_DATE" precision="29" scale="9"/>
+</columns>
+<recordStrategy imx:id="ID_135" xsi:type="datarecord:CharacterDelimitedRecordStrategy" flatByteRecord="U:3cjrTuaJEeiVaeMu-h7pTQ" columnDelimiterCharacters="%7C" quotationMarks="%22"/>
+</FlatByteDefinition>
+</fileDefinitions>
+<defaultGenerator imx:id="U:3cjrKuaJEeiVaeMu-h7pTQ" xsi:type="datasourceoperation3:FlatByteGenerateDataSourceOperation" dataSource="U:3cjrKeaJEeiVaeMu-h7pTQ" recordDefinition="U:3cjrTuaJEeiVaeMu-h7pTQ">
+<operations>
+<Capability imx:id="ID_136" xsi:type="datasourceoperation1:WriteCapability" defaultAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileGeneratingDataAdapter" defaultConfig="U:3cjrLeaJEeiVaeMu-h7pTQ">
+<inGroups>
+<DataAccessGroup imx:id="ID_137" xsi:type="datasourceoperation1:DataAccessGroup" groupType="U:3cjrPuaJEeiVaeMu-h7pTQ" input="true"/>
+</inGroups>
+</Capability>
+</operations>
+<ownedCapabilityTypes>
+<ComplexType imx:id="U:3cjrPuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:ComplexType" name="input">
+<features>
+<StructuralFeature imx:id="U:3cjrP-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="STORE_ID" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:3cjrQOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="CUSTOMER_ID" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:3cjrQeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="ORDERID" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:3cjrQuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="TERMINAL" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:3cjrQ-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="MERCHANT" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:3cjrROaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="PERIOD" precision="6" upper="1"/>
+<StructuralFeature imx:id="U:3cjrReaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="PAYMENT" precision="50" upper="1"/>
+<StructuralFeature imx:id="U:3cjrRuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CARDNUMBER" precision="25" upper="1"/>
+<StructuralFeature imx:id="U:3cjrR-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="ORDERDATE" precision="8" upper="1"/>
+<StructuralFeature imx:id="U:3cjrSOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="POS_TIME" precision="6" upper="1"/>
+<StructuralFeature imx:id="U:3cjrSeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="TOTALAMOUNTEXVAT" precision="10" scale="2" upper="1"/>
+<StructuralFeature imx:id="U:3cjrSuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="TOTALAMOUNTVAT" precision="10" scale="2" upper="1"/>
+<StructuralFeature imx:id="U:3cjrS-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="TOTALAMOUNT" precision="10" scale="2" upper="1"/>
+<StructuralFeature imx:id="U:3cjrTOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="ORDERTYPE" precision="20" upper="1"/>
+<StructuralFeature imx:id="U:3cjrTeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" name="LOAD_DATE" precision="29" scale="9" upper="1"/>
+</features>
+</ComplexType>
+</ownedCapabilityTypes>
+<columnToInterfaceMap>
+<ColumnFeature imx:id="ID_138" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrT-aJEeiVaeMu-h7pTQ" feature="U:3cjrP-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_139" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrUuaJEeiVaeMu-h7pTQ" feature="U:3cjrQuaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_140" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrU-aJEeiVaeMu-h7pTQ" feature="U:3cjrQ-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_141" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrVOaJEeiVaeMu-h7pTQ" feature="U:3cjrROaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_142" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrUeaJEeiVaeMu-h7pTQ" feature="U:3cjrQeaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_143" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrVeaJEeiVaeMu-h7pTQ" feature="U:3cjrReaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_144" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrVuaJEeiVaeMu-h7pTQ" feature="U:3cjrRuaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_145" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrV-aJEeiVaeMu-h7pTQ" feature="U:3cjrR-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_146" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrWOaJEeiVaeMu-h7pTQ" feature="U:3cjrSOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_147" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrWeaJEeiVaeMu-h7pTQ" feature="U:3cjrSeaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_148" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrWuaJEeiVaeMu-h7pTQ" feature="U:3cjrSuaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_149" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrW-aJEeiVaeMu-h7pTQ" feature="U:3cjrS-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_150" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrXOaJEeiVaeMu-h7pTQ" feature="U:3cjrTOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_151" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrUOaJEeiVaeMu-h7pTQ" feature="U:3cjrQOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_152" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrXeaJEeiVaeMu-h7pTQ" feature="U:3cjrTeaJEeiVaeMu-h7pTQ"/>
+</columnToInterfaceMap>
+</defaultGenerator>
+<defaultParser imx:id="U:3cjrK-aJEeiVaeMu-h7pTQ" xsi:type="datasourceoperation:FlatByteParseDataSourceOperation" dataSource="U:3cjrKeaJEeiVaeMu-h7pTQ" recordDefinition="U:3cjrTuaJEeiVaeMu-h7pTQ">
+<operations>
+<Capability imx:id="ID_153" xsi:type="datasourceoperation1:ReadCapability" defaultAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileParsingDataAdapter" defaultConfig="U:3cjrLOaJEeiVaeMu-h7pTQ">
+<outGroups>
+<DataAccessGroup imx:id="ID_154" xsi:type="datasourceoperation1:DataAccessGroup" groupType="U:3cjrLuaJEeiVaeMu-h7pTQ"/>
+</outGroups>
+</Capability>
+</operations>
+<ownedCapabilityTypes>
+<ComplexType imx:id="U:3cjrLuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:ComplexType" name="output">
+<features>
+<StructuralFeature imx:id="U:3cjrL-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="STORE_ID" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:3cjrMOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="CUSTOMER_ID" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:3cjrMeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="ORDERID" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:3cjrMuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="TERMINAL" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:3cjrM-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="MERCHANT" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:3cjrNOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="PERIOD" precision="6" upper="1"/>
+<StructuralFeature imx:id="U:3cjrNeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="PAYMENT" precision="50" upper="1"/>
+<StructuralFeature imx:id="U:3cjrNuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CARDNUMBER" precision="25" upper="1"/>
+<StructuralFeature imx:id="U:3cjrN-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="ORDERDATE" precision="8" upper="1"/>
+<StructuralFeature imx:id="U:3cjrOOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="POS_TIME" precision="6" upper="1"/>
+<StructuralFeature imx:id="U:3cjrOeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="TOTALAMOUNTEXVAT" precision="10" scale="2" upper="1"/>
+<StructuralFeature imx:id="U:3cjrOuaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="TOTALAMOUNTVAT" precision="10" scale="2" upper="1"/>
+<StructuralFeature imx:id="U:3cjrO-aJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="TOTALAMOUNT" precision="10" scale="2" upper="1"/>
+<StructuralFeature imx:id="U:3cjrPOaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="ORDERTYPE" precision="20" upper="1"/>
+<StructuralFeature imx:id="U:3cjrPeaJEeiVaeMu-h7pTQ" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" name="LOAD_DATE" precision="29" scale="9" upper="1"/>
+</features>
+</ComplexType>
+</ownedCapabilityTypes>
+<columnToInterfaceMap>
+<ColumnFeature imx:id="ID_155" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrT-aJEeiVaeMu-h7pTQ" feature="U:3cjrL-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_156" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrUuaJEeiVaeMu-h7pTQ" feature="U:3cjrMuaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_157" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrU-aJEeiVaeMu-h7pTQ" feature="U:3cjrM-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_158" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrVOaJEeiVaeMu-h7pTQ" feature="U:3cjrNOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_159" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrUeaJEeiVaeMu-h7pTQ" feature="U:3cjrMeaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_160" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrVeaJEeiVaeMu-h7pTQ" feature="U:3cjrNeaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_161" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrVuaJEeiVaeMu-h7pTQ" feature="U:3cjrNuaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_162" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrV-aJEeiVaeMu-h7pTQ" feature="U:3cjrN-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_163" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrWOaJEeiVaeMu-h7pTQ" feature="U:3cjrOOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_164" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrWeaJEeiVaeMu-h7pTQ" feature="U:3cjrOeaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_165" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrWuaJEeiVaeMu-h7pTQ" feature="U:3cjrOuaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_166" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrW-aJEeiVaeMu-h7pTQ" feature="U:3cjrO-aJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_167" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrXOaJEeiVaeMu-h7pTQ" feature="U:3cjrPOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_168" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrUOaJEeiVaeMu-h7pTQ" feature="U:3cjrMOaJEeiVaeMu-h7pTQ"/>
+<ColumnFeature imx:id="ID_169" xsi:type="datasourceoperation2:ColumnFeature" column="U:3cjrXeaJEeiVaeMu-h7pTQ" feature="U:3cjrPeaJEeiVaeMu-h7pTQ"/>
+</columnToInterfaceMap>
+<parseStrategy imx:id="ID_170" xsi:type="datasourceoperation:CharacterDelimitedParseStrategy" entity="U:3cjrK-aJEeiVaeMu-h7pTQ" escapeCharacterRemoved="true" lineBreakCharacter="%5C012"/>
+</defaultParser>
+<defaultReaderConfig imx:id="U:3cjrLOaJEeiVaeMu-h7pTQ" xsi:type="dsoconfig2:FlatbyteReaderConfig" defaultDynFldPrecision="10" defaultDynFldType="string" lineSequentialBufferLength="1024" schemaType="DataDriven" sourceFileDirectory="%2Fuser%2Finfa%2Facme%2Fsis%2Fraw_sis_orders" sourceFileName="sis_orders.csv" sourceFileType="directory">
+<modelExtension imx:id="ID_171" xsi:type="extension:HDFSFlatbyteExtension" compressionFormat="None" connectInfo="stringIdentity:HDFS_CDH_513" connectionName="HDFS_CDH_513"/>
+</defaultReaderConfig>
+<defaultWriterConfig imx:id="U:3cjrLeaJEeiVaeMu-h7pTQ" xsi:type="dsoconfig:FlatbyteWriterConfig" mergeDirectory.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.TargetDir" mergeFile="HDFS_ACME_Orders1.out" targetFileDirectory="%2Fuser%2Finfa%2Facme%2Fsis%2Fraw_sis_orders" targetFileName="raw_sis_orders.csv">
+<modelExtension imx:id="ID_172" xsi:type="extension:HDFSFlatbyteExtension" compressionFormat="None" connectInfo="stringIdentity:HDFS_CDH_513" connectionName="HDFS_CDH_513"/>
+</defaultWriterConfig>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</project:Project>
+<project:Project imx:id="U:KA2j1ec3EeixmO6J3NxcLQ" name="ConnectInfoProject">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.ds.app.metadata.DeploymentAnnotation key1="PROJECT_TYPE" value1="CONNECTINFO_DEPLOYMENT_UNIT"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<contents>
+<IObject imx:id="stringIdentity:HDFS_CDH_513" xsi:type="connection:HDFSConnectInfo" connectionType="com.informatica.adapter.hdfs.models.connection.HDFSConnectInfo" name="HDFS_CDH_513">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<defaultAttributes imx:id="U:Q7fb1lIPEei2fCknb2-8Yg" xsi:type="connectinfo:ConnectionPoolAttributes"/>
+<sdkConnectInfoModelExtension imx:id="ID_173" xsi:type="sdkmodelextension:GenericSDKConnectInfoModelExtension">
+<genericContainer imx:id="ID_174" xsi:type="genericextension:ExtensionContainer" extensionClass="com.informatica.adapter.hdfs.models.connection.HDFSConnectInfoExtension" markerClass="com.informatica.adapter.hdfs.models.connection.HDFSConnectInfo" version="1.2.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_175" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterConfigId">
+<propertyValue imx:id="ID_176" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_177" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopClusterName">
+<propertyValue imx:id="ID_178" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_179" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopConfig">
+<propertyValue imx:id="ID_180" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_181" xsi:type="genericextension:ExtensionAttribute" propertyName="nameNodeURL">
+<propertyValue imx:id="ID_182" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_183" xsi:type="genericextension:ExtensionAttribute" propertyName="password">
+<propertyValue imx:id="ID_184" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_185" xsi:type="genericextension:ExtensionAttribute" propertyName="userName">
+<propertyValue imx:id="ID_186" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</sdkConnectInfoModelExtension>
+</IObject>
+<IObject imx:id="stringIdentity:S3_Bucket" xsi:type="sdkadapter:GenericSDKConnectInfo" connectionType="com.infa.adapter.amazons3.connection.AmazonS3ConnectionConnectInfo" name="S3_Bucket">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<defaultAttributes imx:id="U:LXiCCuZ-EeinKhMoTeugNw" xsi:type="connectinfo:ConnectionPoolAttributes"/>
+<sdkConnectInfoModelExtension imx:id="ID_187" xsi:type="sdkmodelextension:GenericSDKConnectInfoModelExtension">
+<genericContainer imx:id="ID_188" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.connection.AmazonS3ConnectionConnectInfoExtension" markerClass="com.infa.adapter.amazons3.connection.AmazonS3ConnectionConnectInfo" version="1.1.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_189" xsi:type="genericextension:ExtensionAttribute" propertyName="AccessKey">
+<propertyValue imx:id="ID_190" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_191" xsi:type="genericextension:ExtensionAttribute" propertyName="CustomerMasterKeyID">
+<propertyValue imx:id="ID_192" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_193" xsi:type="genericextension:ExtensionAttribute" propertyName="FolderPath">
+<propertyValue imx:id="ID_194" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_195" xsi:type="genericextension:ExtensionAttribute" propertyName="HADOOPNODEDISTPATH">
+<propertyValue imx:id="ID_196" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_197" xsi:type="genericextension:ExtensionAttribute" propertyName="HDFSPath">
+<propertyValue imx:id="ID_198" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_199" xsi:type="genericextension:ExtensionAttribute" propertyName="MasterSymmetricKey">
+<propertyValue imx:id="ID_200" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_201" xsi:type="genericextension:ExtensionAttribute" propertyName="RegionName">
+<propertyValue imx:id="ID_202" xsi:type="genericextension:StringValue" dataValue="US+East%28N.+Virginia%29"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_203" xsi:type="genericextension:ExtensionAttribute" propertyName="SecretKey">
+<propertyValue imx:id="ID_204" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</sdkConnectInfoModelExtension>
+<genericContainer imx:id="ID_205" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.amazons3.connection.AmazonS3ConnectionConnectInfo"/>
+</IObject>
+<IObject imx:id="stringIdentity:HADOOP_CDH_513" xsi:type="sdkadapter:GenericSDKConnectInfo" connectionType="com.infa.adapter.hadoop.connection.SDKHadoopExecEnvConnectInfo" name="HADOOP_CDH_513">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<defaultAttributes imx:id="U:Qh8Ti1IPEei2fCknb2-8Yg" xsi:type="connectinfo:ConnectionPoolAttributes"/>
+<sdkConnectInfoModelExtension imx:id="ID_206" xsi:type="sdkmodelextension:GenericSDKConnectInfoModelExtension">
+<genericContainer imx:id="ID_207" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.hadoop.connection.SDKHadoopExecEnvConnectInfoExtension" markerClass="com.infa.adapter.hadoop.connection.SDKHadoopExecEnvConnectInfo" version="10.11.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_208" xsi:type="genericextension:ExtensionAttribute" propertyName="RMAddress">
+<propertyValue imx:id="ID_209" xsi:type="genericextension:StringValue" dataValue="%3Chostname%3E:8032"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_210" xsi:type="genericextension:ExtensionAttribute" propertyName="blazeJobMonitorURL">
+<propertyValue imx:id="ID_211" xsi:type="genericextension:StringValue" dataValue="%3Chostname%3E:9080"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_212" xsi:type="genericextension:ExtensionAttribute" propertyName="blazeYarnNodeLabelExpression">
+<propertyValue imx:id="ID_213" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_214" xsi:type="genericextension:ExtensionAttribute" propertyName="cadiAppYarnQueueName">
+<propertyValue imx:id="ID_215" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_216" xsi:type="genericextension:ExtensionAttribute" propertyName="cadiExecutionParameterList">
+<propertyValue imx:id="ID_217" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_218" xsi:type="genericextension:ExtensionAttribute" propertyName="cadiMaxPort">
+<propertyValue imx:id="ID_219" xsi:type="genericextension:IntValue" dataValue="12600"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_220" xsi:type="genericextension:ExtensionAttribute" propertyName="cadiMinPort">
+<propertyValue imx:id="ID_221" xsi:type="genericextension:IntValue" dataValue="12300"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_222" xsi:type="genericextension:ExtensionAttribute" propertyName="cadiUserName">
+<propertyValue imx:id="ID_223" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_224" xsi:type="genericextension:ExtensionAttribute" propertyName="cadiWorkingDirectory">
+<propertyValue imx:id="ID_225" xsi:type="genericextension:StringValue" dataValue="%2Fblaze%2Fworkdir"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_226" xsi:type="genericextension:ExtensionAttribute" propertyName="cadipassword">
+<propertyValue imx:id="ID_227" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_228" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterClassPath">
+<propertyValue imx:id="ID_229" xsi:type="genericextension:StringValue" dataValue="%24DEFAULT_CLUSTER_CLASSPATH"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_230" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterConfigId">
+<propertyValue imx:id="ID_231" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_232" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterExecutablePath">
+<propertyValue imx:id="ID_233" xsi:type="genericextension:StringValue" dataValue="%24DEFAULT_CLUSTER_EXEC_PATH"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_234" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterLoadLibraryPath">
+<propertyValue imx:id="ID_235" xsi:type="genericextension:StringValue" dataValue="%24DEFAULT_CLUSTER_LIBRARY_PATH"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_236" xsi:type="genericextension:ExtensionAttribute" propertyName="databaseName">
+<propertyValue imx:id="ID_237" xsi:type="genericextension:StringValue" dataValue="default"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_238" xsi:type="genericextension:ExtensionAttribute" propertyName="defaultFSURI">
+<propertyValue imx:id="ID_239" xsi:type="genericextension:StringValue" dataValue="hdfs:%2F%2F%3Chostname%3E:8020%2F"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_240" xsi:type="genericextension:ExtensionAttribute" propertyName="engineType">
+<propertyValue imx:id="ID_241" xsi:type="genericextension:StringValue" dataValue="MRv2"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_242" xsi:type="genericextension:ExtensionAttribute" propertyName="environmentSQL">
+<propertyValue imx:id="ID_243" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_244" xsi:type="genericextension:ExtensionAttribute" propertyName="environmentVariables">
+<propertyValue imx:id="ID_245" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_246" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopClusterInfoExecutionParametersList">
+<propertyValue imx:id="ID_247" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_248" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopExecEnvExecutionParameterList">
+<propertyValue imx:id="ID_249" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_250" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopRejDir">
+<propertyValue imx:id="ID_251" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_252" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveInfoExecutionParametersList">
+<propertyValue imx:id="ID_253" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_254" xsi:type="genericextension:ExtensionAttribute" propertyName="hivePassword">
+<propertyValue imx:id="ID_255" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_256" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveUserName">
+<propertyValue imx:id="ID_257" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_258" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveWarehouseDirectoryOnHDFS">
+<propertyValue imx:id="ID_259" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_260" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveserver2Enabled">
+<propertyValue imx:id="ID_261" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_262" xsi:type="genericextension:ExtensionAttribute" propertyName="jdbcConnectString">
+<propertyValue imx:id="ID_263" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_264" xsi:type="genericextension:ExtensionAttribute" propertyName="jobMonitoringURL">
+<propertyValue imx:id="ID_265" xsi:type="genericextension:StringValue" dataValue="%3Chostname%3E:8021"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_266" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseDriver">
+<propertyValue imx:id="ID_267" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_268" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabasePassword">
+<propertyValue imx:id="ID_269" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_270" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseURI">
+<propertyValue imx:id="ID_271" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_272" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseUserName">
+<propertyValue imx:id="ID_273" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_274" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreMode">
+<propertyValue imx:id="ID_275" xsi:type="genericextension:StringValue" dataValue="remote"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_276" xsi:type="genericextension:ExtensionAttribute" propertyName="passThroughSecurityEnabled">
+<propertyValue imx:id="ID_277" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_278" xsi:type="genericextension:ExtensionAttribute" propertyName="provisionConnectionId">
+<propertyValue imx:id="ID_279" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_280" xsi:type="genericextension:ExtensionAttribute" propertyName="rejDirOnHadoop">
+<propertyValue imx:id="ID_281" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_282" xsi:type="genericextension:ExtensionAttribute" propertyName="remoteMetastoreURI">
+<propertyValue imx:id="ID_283" xsi:type="genericextension:StringValue" dataValue="thrift:%2F%2F%3Chostname%3E:%3Cport%3E"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_284" xsi:type="genericextension:ExtensionAttribute" propertyName="sparkDeployMode">
+<propertyValue imx:id="ID_285" xsi:type="genericextension:StringValue" dataValue="CLUSTER"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_286" xsi:type="genericextension:ExtensionAttribute" propertyName="sparkEventLogDir">
+<propertyValue imx:id="ID_287" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_288" xsi:type="genericextension:ExtensionAttribute" propertyName="sparkExecutionParameterList">
+<propertyValue imx:id="ID_289" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_290" xsi:type="genericextension:ExtensionAttribute" propertyName="sparkHdfsStagingDir">
+<propertyValue imx:id="ID_291" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_292" xsi:type="genericextension:ExtensionAttribute" propertyName="sparkMaster">
+<propertyValue imx:id="ID_293" xsi:type="genericextension:StringValue" dataValue="yarn"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_294" xsi:type="genericextension:ExtensionAttribute" propertyName="sparkYarnQueueName">
+<propertyValue imx:id="ID_295" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_296" xsi:type="genericextension:ExtensionAttribute" propertyName="stgDataCompressionCodecClass">
+<propertyValue imx:id="ID_297" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_298" xsi:type="genericextension:ExtensionAttribute" propertyName="stgDataCompressionCodecType">
+<propertyValue imx:id="ID_299" xsi:type="genericextension:StringValue" dataValue="None"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</sdkConnectInfoModelExtension>
+<genericContainer imx:id="ID_300" xsi:type="genericextension:ExtensionContainer" extensionClass="com.infa.adapter.hadoop.connection.SDKHadoopExecEnvConnectInfo"/>
+</IObject>
+</contents>
+</project:Project>
+<project:Project imx:id="U:KA3K5uc3EeixmO6J3NxcLQ" name="App_datalake_stores">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.ds.app.metadata.DeploymentAnnotation key1="PROJECT_TYPE" value1="DEPLOYMENT_UNIT"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<contents>
+<IObject imx:id="U:KA3K5-c3EeixmO6J3NxcLQ" xsi:type="common3:Application" name="App_datalake_stores" spec="U:NabrU-aUEeiVaeMu-h7pTQ">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.ds.app.metadata.DeploymentAnnotation key1="VALIDATION_TYPE" value1="SKIP"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<annotations>
+<Annotation imx:id="ID_301" xsi:type="description:Description" body="Release_Tag_v1"/>
+</annotations>
+<attributes>
+<Attribute imx:id="U:KA3K6Oc3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Unique+Idenitifier" value="U:NabrU-aUEeiVaeMu-h7pTQ"/>
+<Attribute imx:id="U:KA3x-ec3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Creation+Domain" value="Domain_1021_infa1021cdh513_dynvpn_de:6005"/>
+<Attribute imx:id="U:KA3x-uc3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Creation+Project+Path" value="easyjet%5CScenario_3"/>
+<Attribute imx:id="U:KA3x--c3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Creation+Date" value="2018-11-12T16:01:26%2B0000"/>
+<Attribute imx:id="U:KA3x_Oc3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Created+By" value="Administrator"/>
+<Attribute imx:id="U:KA3x_ec3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Last+Modification+Date" value="2018-11-13T11:27:30%2B0000"/>
+<Attribute imx:id="U:KA3x_uc3EeixmO6J3NxcLQ" xsi:type="common3:Attribute" name="Last+Modified+By" value="Administrator"/>
+</attributes>
+</IObject>
+</contents>
+</project:Project>
+<imx:crc value="550936198"/>
+</imx:IMX>
